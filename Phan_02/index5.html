@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .Portfolio {
+        display: grid;
+        grid-template-columns: 350px 350px 350px;
+        gap: 30px;
+    }
+    
+    img {
+        width: 350px;
+        height: 200px;
+    }
+    
+    figcaption {
+        text-decoration: underline;
+        font-style: italic;
+    }
+    
+    img:hover,
+    figcaption:hover {
+        cursor: pointer;
+    }
+    
+    figcaption:hover {
+        color: red;
+        transition-duration: 1.5s;
+    }
+    
+    body {
+        background-color: beige;
+    }
+</style>
+
+<body>
+    <h2>Portfolio</h2>
+    <div class="Portfolio">
+        <div class="Portfolio1">
+            <img src="/Minh Chung/phan_01_cau_01.PNG" alt="">
+            <figcaption>Du an dau tien</figcaption>
+            <p>Luyen tap thao tac co ban voi HTML CSS de format cac elements voi cac cau lenh co ban nhu color, background-color, border-radius,... </p>
+        </div>
+        <div class="Portfolio2">
+            <img src="/Minh Chung/Phan_01_Cau_02.PNG" alt="">
+            <figcaption>Du an thu hai</figcaption>
+            <p>Ket hop kien thuc da hoc de len danh sach cac mon hoc yeu thich va to mau tung dong khac nhau cung voi do la ket hop CSS hover de thao tac nguoi dung</p>
+        </div>
+        <div class="Portfolio3">
+            <img src="/Minh Chung/Phan_01_Cau_03.PNG" alt="">
+            <figcaption>Du an thu ba</figcaption>
+            <p>Thiet ke thoi khoa bieu co day du mau sac, vien bang su dung cac cau lenh background-color, nth-child(even), nth-child(odd) de to mau xen ke cac dong bang</p>
+        </div>
+    </div>
+</body>
+
+</html>

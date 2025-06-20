@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: aqua;
+        }
+        .form > *{
+            background-color: white;
+            box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+            margin:15px 0px;
+            padding:25px;
+            border-radius: 12px;
+        }
+        .title{
+            background-image: linear-gradient(to top, white 85%, red 15%);
+        }
+        .form{
+            text-align: left;
+            align-items: center;
+            width: 50%;
+            height: auto;
+        }
+        label{
+            margin: 0 10px;
+        }
+        .question{
+            margin:0
+        }
+        .container{
+            margin-left: 25%;
+        }
+        input{
+            padding: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <div class="title">
+                <h2>Form khảo sát ý kiến</h2>
+                <p>Hãy cho tôi biết sơ lược về ý kiến của bạn đối với vấn đề ...</p>
+            </div>
+            <form>
+                <label class="question" for="name">Bạn tên là?</label><br>
+                <br>
+                <input tyoe="text" id="name" name="name" value="name..."><br>
+            </form>
+            <form>
+                <label class="question" for="question2">Bạn hiện đang là?</label><br>
+                <br>
+                <input type="radio" name="question2"><label for="question2">Học sinh THPT</label><br>
+                <br>
+                <input type="radio" name="question2"><label for="question2">Sinh viên</label><br>
+                <br>
+                <input type="radio" name="question2"><label for="question2">Công nhân</label><br>
+                <br>
+                <input type="radio" name="question2"><label for="question2">Khác:</label><input type="text" name="question2" value="Khác..." <br>
+            </form>
+            <form>
+                <label for="question3" class="question">Bạn đồng ý với ý kiến nào sau đây</label><br>
+                <br>
+                <input type="checkbox" name="question3"><label for="question3">Vấn đề giải quyết đơn giản</label><br>
+                <br>
+                <input type="checkbox" name="question3"><label for="question3">Vấn đề có thể hiệu quả</label><br>
+                <br>
+                <input type="checkbox" name="question3"><label for="question3">Vấn đề khó giải quyết</label><br>
+                <br>
+                <input type="checkbox" name="question3"><label for="question3">Vấn đề mâu thuẫn</label><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
